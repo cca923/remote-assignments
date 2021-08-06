@@ -1,0 +1,299 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif, sans-serif;
+  line-height: 1.2;
+  color: #24150e;
+  margin: 0;
+  flex-direction: column;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+  font-size: 1em;
+}
+h2,
+h3,
+a {
+  color: #24150e;
+}
+h2,
+h3 {
+  margin-top: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.headline {
+  font-size: 1.2em;
+}
+.tagline {
+  font-size: 1em;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+  font-size: 1.4em;
+  margin: 0;
+}
+
+.name a,
+.main-nav a {
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
+}
+.main-nav a {
+  font-size: 1em;
+  color: #a55f21;
+  text-transform: uppercase;
+}
+.main-nav a:hover {
+  color: #dfb48a;
+}
+
+/* ---- Layout Containers ---- */
+
+/* ---- Navigation ---- */
+/* ---- For default-menu ---- */
+
+.main-header,
+.main-nav {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-header h1 {
+  margin-right: auto;
+}
+
+/* --- default-menu：螢幕 > 800px 才顯示 --- */
+.default-menu {
+  display: none;
+}
+
+/* ---- For dropdown-menu ---- */
+/* --- dropdown-menu：螢幕 < 800px 顯示 --- */
+.dropbtn {
+  width: 3rem;
+  padding: 5px;
+  cursor: pointer;
+  margin-right: 2%;
+}
+
+.closebtn {
+  width: 2rem;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: flex;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.mobile-nav a {
+  font-size: 1em;
+  color: #a55f21;
+  text-transform: uppercase;
+  padding: 12px 16px;
+  display: block;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.mobile-nav a:hover {
+  background-color: #ddd8d8;
+}
+
+.closebtn:hover {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.hidden {
+  display: none;
+}
+
+.banner,
+.main-footer {
+  text-align: center;
+}
+.banner {
+  color: #fff;
+  background: #d4a373;
+  padding: 2em 0;
+  margin-bottom: 36px;
+  border-left: 1rem solid #bc6c25;
+}
+.section,
+.show-more-btn {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.col {
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+.main-footer {
+  background: #faedcd;
+  padding: 2em 0;
+  margin-top: 30px;
+}
+
+/* ---- Page Elements ---- */
+
+.headline {
+  margin-bottom: 0.5;
+  margin-top: 0;
+}
+
+.col p {
+  text-align: center;
+}
+
+footer a {
+  color: #a55f21;
+}
+
+.introduction {
+  background-color: antiquewhite;
+  line-height: 2.5;
+  border-radius: 10px;
+}
+
+.show-more-btn {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.show-more-btn button {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  background-color: #dfb48a;
+  padding: 12px 16px;
+  border: 8px solid #dfb48a;
+  border-radius: 10px;
+}
+
+.show-more-btn button:hover {
+  background-color: #c49a71;
+  cursor: pointer;
+  transform: translateY(-0.1em);
+  transition: 0.2s;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 500px) {
+  .closebtn {
+    width: 1.5rem;
+  }
+  .headline {
+    font-size: 1.5em;
+  }
+  .tagline {
+    font-size: 1.2em;
+  }
+
+  /* ---- Flexbox ---- */
+
+  .col {
+    flex: 1 50%;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 800px) {
+  .headline {
+    font-size: 2em;
+  }
+  .tagline {
+    font-size: 1.8em;
+  }
+
+  /* ---- Flexbox ---- */
+
+  .dropbtn,
+  .mobile-menu {
+    display: none;
+  }
+  .default-menu {
+    display: flex;
+  }
+
+  .col {
+    flex: 1 50%;
+  }
+
+  .row {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .headline {
+    font-size: 2.5em;
+  }
+  .tagline {
+    font-size: 2em;
+  }
+
+  /* ---- Flexbox ---- */
+
+  .col {
+    flex-basis: 0;
+  }
+
+  .row {
+    flex-direction: row;
+  }
+}
