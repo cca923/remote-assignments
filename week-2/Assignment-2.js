@@ -10,7 +10,6 @@ function calculate(args) {
   return result;
 }
 // Try to call calculate function correctly
-console.log(calculate({ op: "+", n1: 2, n2: 7 }));
 
 /*
 For example, if we have an add function like this:
@@ -24,42 +23,22 @@ add(用類別或建構式產生的物件); // your another way
 */
 
 ///////////////////////////////////////////////////
-// 👉 First Way (Object)
-const calculateObj = {
-  calculate(args) {
-    let result;
-    if (args.op === "+") {
-      result = args.n1 + args.n2;
-    } else if (args.op === "-") {
-      result = args.n1 - args.n2;
-    } else {
-      result = "Not supported";
-    }
-    return console.log(result);
-  },
+// 👉 First Way
+const arg1 = {
+  op: "+",
+  n1: 2,
+  n2: 7,
 };
+calculate(arg1); // 9
 
-calculateObj.calculate({ op: "+", n1: 2, n2: 7 });
-
-// 👉 Second Way (Class)
-// You should apply constructor or class as another way to create a proper object.
-class Calculate {
-  constructor(args) {
-    this.args = args;
-  }
-
-  calculate() {
-    let result;
-    if (this.args.op === "+") {
-      result = this.args.n1 + this.args.n2;
-    } else if (this.args.op === "-") {
-      result = this.args.n1 - this.args.n2;
-    } else {
-      result = "Not supported";
-    }
-    return console.log(result);
+// 👉 Second Way
+class Args {
+  constructor(op, n1, n2) {
+    this.op = op;
+    this.n1 = n1;
+    this.n2 = n2;
   }
 }
 
-const test = new Calculate({ op: "+", n1: 2, n2: 7 });
-test.calculate();
+const arg2 = new Args("+", 2, 7);
+calculate(arg2); // 9
