@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://cca923.github.io/remote-assignments-AppWorks/week-4/Assignment-3/Version-2/",
+  "homepage": "https://cca923.github.io/remote-assignments-AppWorks/tree/main/week-4/Assignment-3/Version-2",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
