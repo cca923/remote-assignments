@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/remote-assignments-AppWorks/tree/main/week-4/Assignment-3/Version-2/static/css/main.5f8d385d.chunk.css",
+    "main.js": "/remote-assignments-AppWorks/tree/main/week-4/Assignment-3/Version-2/static/js/main.7ed3521a.chunk.js",
+    "main.js.map": "/remote-assignments-AppWorks/tree/main/week-4/Assignment-3/Version-2/static/js/main.7ed3521a.chunk.js.map",
+    "runtime-main.js": "/remote-assignments-AppWorks/tree/main/week-4/Assignment-3/Version-2/static/js/runtime-main.72c0dad6.js",
+    "runtime-main.js.map": "/remote-assignments-AppWorks/tree/main/week-4/Assignment-3/Version-2/static/js/runtime-main.72c0dad6.js.map",
+    "static/js/2.af691aaf.chunk.js": "/remote-assignments-AppWorks/tree/main/week-4/Assignment-3/Version-2/static/js/2.af691aaf.chunk.js",
+    "static/js/2.af691aaf.chunk.js.map": "/remote-assignments-AppWorks/tree/main/week-4/Assignment-3/Version-2/static/js/2.af691aaf.chunk.js.map",
+    "static/js/3.aac5e04c.chunk.js": "/remote-assignments-AppWorks/tree/main/week-4/Assignment-3/Version-2/static/js/3.aac5e04c.chunk.js",
+    "static/js/3.aac5e04c.chunk.js.map": "/remote-assignments-AppWorks/tree/main/week-4/Assignment-3/Version-2/static/js/3.aac5e04c.chunk.js.map",
+    "index.html": "/remote-assignments-AppWorks/tree/main/week-4/Assignment-3/Version-2/index.html",
+    "static/css/main.5f8d385d.chunk.css.map": "/remote-assignments-AppWorks/tree/main/week-4/Assignment-3/Version-2/static/css/main.5f8d385d.chunk.css.map",
+    "static/js/2.af691aaf.chunk.js.LICENSE.txt": "/remote-assignments-AppWorks/tree/main/week-4/Assignment-3/Version-2/static/js/2.af691aaf.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.72c0dad6.js",
+    "static/js/2.af691aaf.chunk.js",
+    "static/css/main.5f8d385d.chunk.css",
+    "static/js/main.7ed3521a.chunk.js"
+  ]
+}
